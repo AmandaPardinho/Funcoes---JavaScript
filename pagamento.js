@@ -13,37 +13,53 @@ Condições de pagamento:\n\
     - acimaDuasVezes = precoEtiqueta * 1.1;
 */
 
-function escolha(numero){
-    do{
-        switch(numero){
-            case 1:
-                console.log("debito\n");
-                totalCompra = precoEtiqueta * 0.9;
-                console.log("O valor total a pagar é de R$ " + totalCompra.toFixed(2));
-                break;
-            case 2:
-                console.log("dinheiroPix\n");
-                totalCompra = precoEtiqueta * 0,85;
-                console.log("O valor total a pagar é de R$ " + totalCompra.toFixed(2));
-                break;
-            case 3:
-                console.log("duasVezes\n");
-                totalCompra = precoEtiqueta;
-                console.log("O valor total a pagar é de R$ " + totalCompra.toFixed(2));
-                break;
-            case 4:
-                console.log("acimaDuasVezes\n");
-                totalCompra = precoEtiqueta * 1.1;
-                console.log("O valor total a pagar é de R$ " + totalCompra.toFixed(2));
-                break;
-            case 5:
-                console.log("Sair\n");
-                console.log("Agradecemos a preferência! Volte sempre!");
-            default:
-                console.log("Número inválido");
-        }
-    }while(numero != 5);
+
+function escolha(numero, precoEtiqueta) {
+    switch (numero) {
+        case 1:
+            console.log("Débito\n");
+            totalCompra = (precoEtiqueta) * 0.9;
+            console.log("O valor total a pagar é de R$ " + totalCompra.toFixed(2));
+            break;
+        case 2:
+            console.log("Dinheiro/Pix\n");
+            totalCompra = (precoEtiqueta) * 0.85;
+            console.log("O valor total a pagar é de R$ " + totalCompra.toFixed(2));
+            break;
+        case 3:
+            console.log("Em duas vezes\n");
+            totalCompra = (precoEtiqueta);
+            console.log("O valor total a pagar é de R$ " + totalCompra.toFixed(2));
+            break;
+        case 4:
+            console.log("Mais de duas vezes\n");
+            totalCompra = (precoEtiqueta) * 1.1;
+            console.log("O valor total a pagar é de R$ " + totalCompra.toFixed(2));
+            break;
+        case 5:
+            console.log("Sair\n");
+            console.log("Agradecemos a preferência! Volte sempre!");
+            break;
+        default:
+            console.log("Número inválido");
+    }
 }
 
+function interaja() {
+    const readline = require(`node:readline`);
+    const { stdin: input, stdout: output } = require(`node:process`);
 
+    const leitor = readline.createInterface({
+        input,
+        output
+    });
+
+    leitor.question("Qual o valor do produto?", (answer1) => {
+        leitor.question("\nQual a forma de pagamento?\nDigite:\n1 - Débito;\n2 - Dinheiro ou PIX;\n3 - Em 2x;\n4 - Acima de 2x;\n5 - Sair\n", (answer2) => {
+            escolha(+answer2, +answer1);
+        });
+    });
+}
+
+interaja();
 
