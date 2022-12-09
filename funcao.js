@@ -31,7 +31,8 @@ function condicaoImc(imc){
     }
 }
 
-function terminal(){
+//função imediatamente invocada
+(function terminal(){
     const readline = require(`node:readline`);
     const {stdin: input, stdout: output} = require(`node:process`);
 
@@ -46,6 +47,5 @@ function terminal(){
             condicaoImc(imc);
         })
     })
-};
+})();
 
-terminal();
