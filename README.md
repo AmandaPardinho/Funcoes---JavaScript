@@ -6,9 +6,9 @@
 ## Funcao
 > Nessa primeira aula, foi proposto refatorar o exercício do módulo anterior que calculava o IMC de um indivíduo. Com a refatoração, funções foram definidas e, ao final do código, uma delas era chamada e entregava a resposta do exercício.
 >
-> Na resolução do professor Renan apenas duas funções foram criadas. Na minha resolução, feita antes de assistir o final da aula com a "resolução oficial", há três funções. 
+> Na resolução do professor Renan três funções foram criadas. Na minha resolução, feita antes de assistir o final da aula com a "resolução oficial", há também três funções, sendo duas delas muito próximas das que foram criadas na aula. 
 > 
-> Em duas delas, na que calcula o IMC da pessoa e na que o classifica, fizemos de forma bastante parecida. Porém, minha terceira função faz o que o código apresentado em aula não faz: interage com o usuário.
+> Nessas duas funções o código é formado basicamente pelo cálculo do IMC e a tabela que o classifica. Porém, minha terceira função faz o que o código apresentado em aula não faz: interage com o usuário.
 >
 > Esse tipo de interação não é muito usual quando se cria um código apenas usando o JavaScript. No entanto, quando ele está junto com HTML e CSS, essa interação costuma ocorrer através do browser. 
 > 
