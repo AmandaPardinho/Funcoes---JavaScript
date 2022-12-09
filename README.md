@@ -16,6 +16,16 @@
 
 ---
 
+## Pagamento
+> Assim como na primeira aula, nessa segunda tivemos que refatorar um problema feito no módulo anterior. Dessa vez o exercício escolhido foi o de simulação de compra numa loja. Assim como no anterior, o objetivo era refatorar e criar funções para melhor estruturação do código.
+>
+> Novamente, fiz a minha resolução antes de terminar o vídeo e assistir a resolução feita pelo professor. Por esse motivo, a minha ficou bastante diferente da apresentada em aula. Dessa vez, optei por usar a estrutura do switch no lugar de if/else. Por ser um exercício cujo enunciado falava em opções de pagamento, achei essa estrutura mais adequada à resolução.
+>
+> Assim, uma função com a estrutura do switch foi criada juntamente com uma outra que permite a interação pelo terminal e chama a primeira função dentro de sua estrutura.
+>
+> Desse modo, foi possível estudar uma outra estrutura condicional diferente daquela vista em aula e reforçar o aprendizado da implementação da estrutura que permite a interação com o terminal.
+---
+
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
 </a>
