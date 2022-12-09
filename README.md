@@ -1,5 +1,18 @@
-# Fun-es---JavaScript
-Estudo sobre funções no bootcamp Orange Tech +
+# Funções---JavaScript
+> Estudo sobre funções e sua importância na estruturação do código no bootcamp Orange Tech + - DIO.
+
+---
+
+## Funcao
+> Nessa primeira aula, foi proposto refatorar o exercício do módulo anterior que calculava o IMC de um indivíduo. Com a refatoração, funções foram definidas e, ao final do código, uma delas era chamada e entregava a resposta do exercício.
+>
+> Na resolução do professor Renan apenas duas funções foram criadas. Na minha resolução, feita antes de assistir o final da aula com a "resolução oficial", há três funções. 
+> 
+> Em duas delas, na que calcula o IMC da pessoa e na que o classifica, fizemos de forma bastante parecida. Porém, minha terceira função faz o que o código apresentado em aula não faz: interage com o usuário.
+>
+> Esse tipo de interação não é muito usual quando se cria um código apenas usando o JavaScript. No entanto, quando ele está junto com HTML e CSS, essa interação costuma ocorrer através do browser. 
+> 
+> Como costumo usar muito o Java, linguagem na qual foco a maior parte do meu tempo de estudo, essa interação via terminal é algo que faço normalmente. Acredito que, ao fazer isso, o programa fica mais dinâmico e, por esse motivo, resolvi implementá-la aqui no JavaScript também. 
 
 ---
 
