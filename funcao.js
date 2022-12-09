@@ -12,12 +12,12 @@ Condição do peso de adultos, de acordo com o IMC:\n\
 -Entre 30 e 40: obeso;\n\
 -Acima de 40: obesidade mórbida.\n");
 
-function imc(peso, altura){
+function calculaImc(peso, altura){
     imc = peso/(Math.pow(altura, 2));
     console.log(imc.toFixed(2));
 }
 
-function condicaoImc(imc){
+function classificaImc(imc){
     if(imc < 18.5){
         console.log("Abaixo do peso");
     }else if(imc >= 18.5 && imc < 25){
@@ -32,7 +32,9 @@ function condicaoImc(imc){
 }
 
 //função imediatamente invocada
-(function terminal(){
+    //não precisava ter um nome (insereDadosTerminal); 
+    //normalmente este tipo de função é invocado uma única vez
+(function insereDadosTerminal(){
     const readline = require(`node:readline`);
     const {stdin: input, stdout: output} = require(`node:process`);
 
@@ -43,8 +45,8 @@ function condicaoImc(imc){
 
     leitor.question("Qual o seu peso?", (answer1)=>{
         leitor.question("\nQual a sua altura?", (answer2)=>{
-            imc(+answer1, +answer2);
-            condicaoImc(imc);
+            calculaImc(+answer1, +answer2);
+            classificaImc(imc);
         })
     })
 })();
